@@ -13,6 +13,44 @@ public class Email {
     String id;
     String firstName;
     String lastName;
+    String email;
+    String domain;
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+
+    public String getDomain() {
+        return domain;
+    }
+
+    @Override
+    public String toString() {
+        return "Email{" +
+                "id='" + id + '\'' +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", email='" + email + '\'' +
+                ", domain='" + domain + '\'' +
+                '}';
+    }
+
+    public void setDomain(String domain) {
+        this.domain = domain;
+    }
+
+    public Email(String id, String firstName, String lastName, String email, String domain) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.domain = domain;
+    }
 
     public String getId() {
         return id;
@@ -38,13 +76,6 @@ public class Email {
         this.lastName = lastName;
     }
 
-    public String getEmail() {
-        return Email;
-    }
 
-    public void setEmail(String email) {
-        Email = email;
-    }
 
-    String Email;
 }
